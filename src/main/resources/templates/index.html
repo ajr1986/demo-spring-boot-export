@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${title}">Insert title here</title>
+
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-info">
+  <span class="navbar-brand mb-0 h1">Export Demo</span>
+</nav>
+
+<div class="container" style="margin-top:50px">
+
+		<nav class="navbar navbar-ligth bg-white">
+			<span class="navbar-brand mb-0 h1">Apps</span>
+			<div>
+				<a th:href="@{/index(format=pdf)}" class="btn btn-outline-danger m-1" target="_blank">Export PDF</a>
+				<a th:href="@{/index(format=xlsx)}" class="btn btn-outline-success m-1" target="_blank">Export Excel</a>
+				<a th:href="@{/index(format=csv)}" class="btn btn-outline-info m-1" target="_blank">Export CSV</a>
+				<a th:href="@{/index(format=xml)}" class="btn btn-outline-primary m-1" target="_blank">Export XML</a>
+				<a th:href="@{/index(format=json)}" class="btn btn-outline-secondary m-1" target="_blank">Export Json</a>
+			</div>
+		</nav>
+		
+		<br>
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">App name</th>
+					<th scope="col">Domain</th>
+					<th scope="col">Version</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="app : ${apps}">
+					<td th:text="${app.id}"></td>
+					<td th:text="${app.appName}"></td>
+					<td th:text="${app.domain}"></td>
+					<td th:text="${app.version}"></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+<footer>
+
+	<script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+	<script th:src="@{/js/popper.min.js}"></script>
+	<script th:src="@{/js/bootstrap.min.js}"></script>
+	
+</footer>
+
+</body>
+</html>

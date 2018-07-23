@@ -1,0 +1,10 @@
+insert into apps (id, app_name, domain, version) values (1, 'Gembucket', 'acquirethisname.com', '2.3.9');
+insert into apps (id, app_name, domain, version) values (2, 'Hatity', 'abc.net.au', '9.7.5');
+insert into apps (id, app_name, domain, version) values (3, 'Toughjoyfax', 'qq.com', '4.79');
+insert into apps (id, app_name, domain, version) values (4, 'Temp', 'scribd.com', '6.23');
+insert into apps (id, app_name, domain, version) values (5, 'Zontrax', 'linkedin.com', '8.8');
+insert into apps (id, app_name, domain, version) values (6, 'Lotlux', 'google.com.br', '9.98');
+insert into apps (id, app_name, domain, version) values (7, 'Zaam-Dox', 'i2i.jp', '0.4.6');
+insert into apps (id, app_name, domain, version) values (8, 'It', 'usatoday.com', '0.62');
+insert into apps (id, app_name, domain, version) values (9, 'Cardguard', 'php.net', '7.20');
+insert into apps (id, app_name, domain, version) values (10, 'Tin', 'ox.ac.uk', '3.1');
